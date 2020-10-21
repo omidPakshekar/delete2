@@ -1,0 +1,204 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #c3d9f0;
+}
+
+*{
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+/*txtWelcome Style*/
+/*-------------------------------------------------*/
+#txtWelcome{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+#txtWelcome span{
+    background: #c3d9f0;
+    font-size: 30px;
+    padding: 35px;
+    border-radius: 20px;
+    font-variant-caps: small-caps;
+    box-shadow: 5px 5px 8px 10px #b4d0ee;
+}
+
+/*-------------------------------------------------*/
+
+/*Background Image control*/
+/*-------------------------------------------------*/
+.img{
+    background-size: cover;
+    background-position: bottom;
+    margin:0;
+}
+
+.img1{
+    background-image: url("../images/pici.jpg");
+    background-attachment: fixed;
+    height: 100%;
+}
+.img3{
+    background-image: url("../images/picii.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    height: 50%;
+    opacity: 80%;
+}
+
+.img4{
+    background-image: url("../images/piciii.jpg");
+    background-attachment: fixed;
+    height: 100%;
+}
+/*-------------------------------------------------*/
+/*section Control */
+
+.section{
+    margin: 20px;
+    line-height: 30px;
+    padding: 5vw 5vw 5vw 5vw;
+    font-size: 20px;
+}
+
+/*-------------------------------------------------*/
+/*About me (In section one)*/
+.model{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+.model img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 2px #a8cfee;
+}
+
+/*-------------------------------------------------*/
+/*Apps that I worked with them*/
+.app{
+    margin-bottom: 40px;
+}
+.app div{
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+    margin: 20px;
+}
+
+.app div img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    justify-content:space-between;
+
+}
+
+.app div :hover{
+    opacity: 80%;
+
+}
+
+/*-------------------------------------------------*/
+/*Contact me (tel + mail)*/
+#contact{
+    display: inline-flex;
+    position: relative;
+    top : 92%;
+    left: 50%;
+
+}
+
+#contact a{
+   padding: 5px;
+
+}
+#contact a div{
+    width: 30px;
+    height: 30px;
+
+}
+
+#contact a div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#contact a div:hover{
+    opacity: 80%;
+
+}
+/*-------------------------------------------------*/
+
+/*Responsive */
+@media screen and (max-width:604px){
+    #txtWelcome span{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .section{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify-all;
+    }
+
+    .model {
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 8px 1px #a8cfee;
+    }
+
+    #contact{
+        left: 40%;
+    }
+}
+
+@media screen and (max-width:400px) and (min-width: 100px) {
+    #txtWelcome span{
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .model{
+        float: initial;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1310px){
+    .section{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1500px) and (min-height: 700px) {
+    #txtWelcome{
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .model{
+        width:250px;
+        height:250px;
+    }
+}
